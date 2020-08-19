@@ -21,7 +21,7 @@ class Queue {
     var least = Infinity;
     for (var key in this.storage) {
       if (key < least) {
-        least =  key;
+        least = key;
       }
     }
     var string = this.storage[least];
