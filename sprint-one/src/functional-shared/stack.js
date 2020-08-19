@@ -11,6 +11,7 @@ var Stack = function() {
 var stackMethods = {
   push(n) {
     this.store[this.key] = n;
+    this.key++;
   },
   pop() {
     this.key--;
