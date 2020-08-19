@@ -12,7 +12,7 @@ Stack.prototype.push = function(n) {
 
 Stack.prototype.pop = function() {
   this.key--;
-  if (this.key > 0) {
+  if (this.key < 0) {
     this.key = 0;
   }
   return this.store[this.key];
