@@ -8,7 +8,7 @@ class Stack {
 
   push(n) {
     this.store[this.key] = n;
-    this.key--;
+    this.key++;
   }
 
   pop() {
