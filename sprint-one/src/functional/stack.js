@@ -12,7 +12,7 @@ var Stack = function() {
 
   someInstance.pop = function() {
     someInstance.key--;
-    if(someInstance.key < 0) {
+    if (someInstance.key < 0) {
       someInstance.key = 0;
     }
     return someInstance.storage[someInstance.key];
