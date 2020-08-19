@@ -8,7 +8,7 @@ var Stack = function() {
 Stack.prototype.push = function(n) {
   this.store[this.key] = n;
   this.key++;
-}
+};
 
 Stack.prototype.pop = function() {
   this.key--;
@@ -16,10 +16,10 @@ Stack.prototype.pop = function() {
     this.key = 0;
   }
   return this.store[this.key];
-}
+};
 
 Stack.prototype.size = function() {
   return this.key;
-}
+};
 
 
