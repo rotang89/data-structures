@@ -14,18 +14,21 @@ var Queue = function() {
   };
 
   someInstance.dequeue = function() {
-    var dequeued = storage[0];
-    delete storage[0];
-    for (var key in storage) {
-      storage[key - 1] = storage[key];
+    if (index > 0) {
+      var dequeued = storage[0];
+      delete storage[0];
+      for (var key in storage) {
+        storage[key - 1] = storage[key];
+      }
+      delete storage[index - 1];
+      index--;
+      return dequeued;
     }
-    delete storage[index - 1];
-    index--;
-    return dequeued;
+
   };
 
   someInstance.size = function() {
-    return Object.keys(storage).length;
+    return index;
   };
 
   return someInstance;
