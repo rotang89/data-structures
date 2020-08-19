@@ -13,7 +13,7 @@ class Stack {
 
   pop() {
     this.key--;
-    if (this.key > 0) {
+    if (this.key < 0) {
       this.key = 0;
     }
     return this.store[this.key];
