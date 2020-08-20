@@ -1,5 +1,6 @@
-var BinarySearchTree = function(value) {
-};
+var BinarySearchTree = function(value) {};
+
+
 
 
 /*
