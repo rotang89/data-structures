@@ -1,9 +1,10 @@
 class DoublyLinkedList {
   constructor() {
-      this.head = null;
-      this.tail = null;
-    }
-    //Methods
+    this.head = null;
+    this.tail = null;
+  }
+
+  //Methods
   addToHead(value) {
     var node = new Node(value);
     if (this.head === null && this.tail === null) { //No Nodes
