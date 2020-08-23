@@ -61,6 +61,16 @@ class BinarySearchTree {
     return false;
   }
 }
+//   breadthFirstLog(cb) {
+//     for (var i = 0; i < 2; i++) {
+//       i.breadthFirstLog(cb); // i = 0
+//       //Time between
+//       i.breadthFirstLog(cb); // i = 1
+//     }
+//     i.breadthFirstLog();
+//     i2.breadthFirstLog();
+//   }
+// }
 
 
 //Left less than | Right greater than
@@ -137,9 +147,8 @@ class BinarySearchTree {
 
 
 //---------------------------------------------------------------------------------------------------------------------------
-/*
- * Complexity: What is the time complexity of the above functions?
-insert - O(log n)
-depthfirstseatch - O(n)
-containts - O(log n)
- */
+
+// Complexity: What is the time complexity of the above functions?
+// insert - O(log n)
+// depthfirstseatch - O(n)
+// containts - O(log n)
